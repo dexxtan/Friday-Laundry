@@ -2,13 +2,26 @@
 <html>
 <head>
   <title>Friday</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application", "960", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<!-- CONTAINER -->
+<div id="container" class="container_12">
+  <!-- HEADER -->
+  <header class="grid_12">
+	<div id="aboveline">
+      <%= image_tag "logo.png" %>
+	  <div id="usernav">
+	  </div>
+	</div>
+	<nav id="sitenav">
+	</nav>
+  </header><!-- END OF HEADER -->
+  
 <%= yield %>
 
+</div><!-- END OF CONTAINER -->
 </body>
 </html>
