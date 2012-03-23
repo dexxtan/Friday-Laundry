@@ -12,20 +12,32 @@
  *= require_tree .
  *= require 960
 */
+/* spreadsheet wide settings */
 body, header {
 	font-family: Arial;
 }
 
+/* links */
 a:link, a:visited, a:active, a:hover {
 	text-decoration: none;
 	color: inherit;
 }
 
+/* colours */
+
 #aboveline {
 	padding-bottom: 15px;
-	border-bottom: 1px solid #00C2C2;
 }
 
+#line {
+	height: 1px;
+	background-color: #00C2C2;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+/* start of sitenav */
 #sitenav ul {
 	padding: 0px;
 	margin: 0px;
@@ -35,6 +47,8 @@ a:link, a:visited, a:active, a:hover {
 
 #sitenav li {
 	float: left;
+	padding: 0px;
+	margin: 0px;
 	margin-right: 20px;
 }
 
@@ -50,15 +64,36 @@ a:link, a:visited, a:active, a:hover {
 	line-height: 50px;
 }
 
-#sitenav ul li div.first {
-	padding-left: 10px;
-}
-
-#sitenav ul li div.last {
-	padding-right: 10px;
-}
+#sitenav ul li div.first { padding-left: 10px; }
+#sitenav ul li div.last { padding-right: 10px; }
 
 #sitenav ul li div.menu img {
 	vertical-align: middle;
 	margin-right: 4px;
 }
+
+#sitenav ul li#general {
+	margin-right: 13px;
+}
+
+#sitenav ul li#viewcart {
+	margin-right: 0px;
+}
+
+#sitenav ul li#viewcart div {
+	float: right;
+	width: 182px;
+	background-color: #FBEDD6;
+	color: #00C2C2;
+	padding: 0px;
+}
+#sitenav ul li#viewcart div #whitetriangle {
+	float: left;
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-bottom: 25px solid transparent;
+	border-left: 25px solid white;
+	margin-right: 15px;
+}
+/* end of sitenav */
