@@ -12,7 +12,53 @@
  *= require_tree .
  *= require 960
 */
+body, header {
+	font-family: Arial;
+}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
 #aboveline {
 	padding-bottom: 15px;
 	border-bottom: 1px solid #00C2C2;
+}
+
+#sitenav ul {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 38px;
+	list-style: none;
+}
+
+#sitenav li {
+	float: left;
+	margin-right: 20px;
+}
+
+#sitenav ul li div.menu {
+	float: left;
+	height: 50px;
+	padding: 0px 4px 0px 4px;
+	background-color: #00C2C2;
+	color: #FFFFFF;
+	
+	font-family: Cafeta;
+	font-size: 20px;
+	line-height: 50px;
+}
+
+#sitenav ul li div.first {
+	padding-left: 10px;
+}
+
+#sitenav ul li div.last {
+	padding-right: 10px;
+}
+
+#sitenav ul li div.menu img {
+	vertical-align: middle;
+	margin-right: 4px;
 }
