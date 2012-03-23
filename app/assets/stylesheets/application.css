@@ -73,21 +73,15 @@ a:link, a:visited, a:active, a:hover {
 }
 
 #sitenav ul li#general {
-	margin-right: 13px;
-}
-
-#sitenav ul li#viewcart {
 	margin-right: 0px;
 }
 
-#sitenav ul li#viewcart div {
+#sitenav ul li#viewcart {
 	float: right;
-	width: 182px;
-	background-color: #FBEDD6;
-	color: #00C2C2;
-	padding: 0px;
+	margin-right: 0px;
 }
-#sitenav ul li#viewcart div #whitetriangle {
+
+#sitenav ul li#viewcart #whitetriangle {
 	float: left;
 	width: 0;
 	height: 0;
@@ -95,5 +89,12 @@ a:link, a:visited, a:active, a:hover {
 	border-bottom: 25px solid transparent;
 	border-left: 25px solid white;
 	margin-right: 15px;
+}
+
+#sitenav ul li#viewcart div.menu {
+	float: right;
+	background-color: #FBEDD6;
+	color: #00C2C2;
+	padding: 0px 10px 0px 0px;
 }
 /* end of sitenav */
