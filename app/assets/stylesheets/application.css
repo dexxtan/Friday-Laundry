@@ -23,10 +23,49 @@ a:link, a:visited, a:active, a:hover {
 	color: inherit;
 }
 
+a img {
+	text-decoration: none;
+	border: 0 none;
+}
+
 /* colours */
 
 #aboveline {
 	padding-bottom: 15px;
+}
+
+#loginnav {
+	float: right;
+	font-family: Cafeta, sans-serif;
+	font-size: 20px;
+	padding: 2px;
+}
+
+#loginnav div {
+	float: right;
+	height: 35px;
+	padding: 0px 15px 2px 0px
+}
+
+#loginnav div#right {
+	padding: 0px 0px 2px 15px;
+	border-left: 1px solid #000000;
+	text-align: right;
+	width: 111px;
+}
+
+#loginnav div#right #link {
+	font-family: Arial;
+	font-size: 13px;
+	color: #03BABA;
+	position: absolute;
+	top: 22px;
+	right: 2px;
+}
+
+#loginnav div img {
+	margin-left: 8px;
+	vertical-align: middle;
 }
 
 #line {
@@ -94,7 +133,7 @@ a:link, a:visited, a:active, a:hover {
 #sitenav ul li#viewcart div.menu {
 	float: right;
 	background-color: #FBEDD6;
-	color: #00C2C2;
+	color: #03BABA;
 	padding: 0px 10px 0px 0px;
 }
 /* end of sitenav */
