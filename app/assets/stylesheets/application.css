@@ -13,7 +13,7 @@
  *= require 960
 */
 /* spreadsheet wide settings */
-body, header {
+html, body {
 	font-family: Arial;
 }
 
@@ -30,31 +30,33 @@ a img {
 
 /* colours */
 
-#aboveline {
+/* header */
+div#aboveline {
 	padding-bottom: 15px;
 }
 
-#loginnav {
+div#loginnav {
 	float: right;
 	font-family: Cafeta, sans-serif;
 	font-size: 20px;
 	padding: 2px;
 }
 
-#loginnav div {
+div#loginnav div {
 	float: right;
 	height: 35px;
 	padding: 0px 15px 2px 0px
 }
 
-#loginnav div#right {
+div#loginnav div#right {
 	padding: 0px 0px 2px 15px;
 	border-left: 1px solid #000000;
 	text-align: right;
 	width: 111px;
+	position: relative;
 }
 
-#loginnav div#right #link {
+div#loginnav div#right font#link {
 	font-family: Arial;
 	font-size: 13px;
 	color: #03BABA;
@@ -63,35 +65,33 @@ a img {
 	right: 2px;
 }
 
-#loginnav div img {
+div#loginnav div img {
 	margin-left: 8px;
 	vertical-align: middle;
 }
 
-#line {
+div#line {
 	height: 1px;
 	background-color: #00C2C2;
 	position: absolute;
-	left: 0;
-	right: 0;
+	left: 0px;
+	right: 0px;
 }
 
 /* start of sitenav */
-#sitenav ul {
+nav#sitenav ul {
 	padding: 0px;
 	margin: 0px;
-	margin-top: 38px;
 	list-style: none;
 }
 
-#sitenav li {
+nav#sitenav li {
 	float: left;
 	padding: 0px;
-	margin: 0px;
-	margin-right: 20px;
+	margin: 38px 20px 38px 0px;
 }
 
-#sitenav ul li div.menu {
+nav#sitenav ul li div.menu {
 	float: left;
 	height: 50px;
 	padding: 0px 4px 0px 4px;
@@ -103,24 +103,24 @@ a img {
 	line-height: 50px;
 }
 
-#sitenav ul li div.first { padding-left: 10px; }
-#sitenav ul li div.last { padding-right: 10px; }
+nav#sitenav ul li div.first { padding-left: 10px; }
+nav#sitenav ul li div.last { padding-right: 10px; }
 
-#sitenav ul li div.menu img {
+nav#sitenav ul li div.menu img {
 	vertical-align: middle;
 	margin-right: 4px;
 }
 
-#sitenav ul li#general {
+nav#sitenav ul li#general {
 	margin-right: 0px;
 }
 
-#sitenav ul li#viewcart {
+nav#sitenav ul li#viewcart {
 	float: right;
 	margin-right: 0px;
 }
 
-#sitenav ul li#viewcart #whitetriangle {
+nav#sitenav ul li#viewcart div#whitetriangle {
 	float: left;
 	width: 0;
 	height: 0;
@@ -130,10 +130,41 @@ a img {
 	margin-right: 15px;
 }
 
-#sitenav ul li#viewcart div.menu {
+nav#sitenav ul li#viewcart div.menu {
 	float: right;
 	background-color: #FBEDD6;
 	color: #03BABA;
 	padding: 0px 10px 0px 0px;
 }
 /* end of sitenav */
+/* end of header */
+
+/* main */
+div#main {
+}
+
+/* footer */
+div#footer {
+	height: 200px;
+	background-color: #FBEDD6;
+	
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 40px;
+}
+
+div#copyright {
+	height: 40px;
+	background-color: #02BCBC;
+	
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 40px;
+	
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
