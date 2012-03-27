@@ -17,6 +17,12 @@ html, body {
 	font-family: Arial;
 }
 
+/* fonts */
+@font-face {
+	font-family: 'Cafeta';
+	src: url('CAFETA__.TTF');
+}
+
 /* links */
 a:link, a:visited, a:active, a:hover {
 	text-decoration: none;
