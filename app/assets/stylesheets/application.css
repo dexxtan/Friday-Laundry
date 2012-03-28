@@ -13,14 +13,28 @@
  *= require 960
 */
 /* spreadsheet wide settings */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
 html, body {
 	font-family: Arial;
+}
+
+ul {
+	list-style: none;
 }
 
 /* fonts */
 @font-face {
 	font-family: 'Cafeta';
 	src: url('CAFETA__.TTF');
+}
+
+@font-face {
+	font-family: 'Atype1';
+	src: url('Atype_1_Normal.ttf');
 }
 
 /* links */
@@ -35,10 +49,29 @@ a img {
 }
 
 /* colours */
+.green {
+	color: #03BABA;
+}
+
+/* commonly used stuff */
+div.lineacross {
+	height: 1px;
+	background-color: #00C2C2;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+div.line {
+	height: 1px;
+	background-color: #00C2C2;
+	width:100%;
+}
 
 /* header */
 div#aboveline {
-	padding-bottom: 15px;
+	margin: 20px 0px 15px 0px;
+	height: 119px
 }
 
 div#loginnav {
@@ -54,7 +87,7 @@ div#loginnav div {
 	padding: 0px 15px 2px 0px
 }
 
-div#loginnav div#right {
+div#loginnav div#joinus {
 	padding: 0px 0px 2px 15px;
 	border-left: 1px solid #000000;
 	text-align: right;
@@ -62,7 +95,7 @@ div#loginnav div#right {
 	position: relative;
 }
 
-div#loginnav div#right font#link {
+div#loginnav div#joinus p {
 	font-family: Arial;
 	font-size: 13px;
 	color: #03BABA;
@@ -76,24 +109,9 @@ div#loginnav div img {
 	vertical-align: middle;
 }
 
-div#line {
-	height: 1px;
-	background-color: #00C2C2;
-	position: absolute;
-	left: 0px;
-	right: 0px;
-}
-
 /* start of sitenav */
-nav#sitenav ul {
-	padding: 0px;
-	margin: 0px;
-	list-style: none;
-}
-
 nav#sitenav li {
 	float: left;
-	padding: 0px;
 	margin: 38px 20px 38px 0px;
 }
 
@@ -105,16 +123,16 @@ nav#sitenav ul li div.menu {
 	color: #FFFFFF;
 	
 	font-family: Cafeta, sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 50px;
 }
 
-nav#sitenav ul li div.first { padding-left: 10px; }
-nav#sitenav ul li div.last { padding-right: 10px; }
+nav#sitenav ul li div.first { padding-left: 13px; }
+nav#sitenav ul li div.last { padding-right: 13px; }
 
 nav#sitenav ul li div.menu img {
 	vertical-align: middle;
-	margin-right: 4px;
+	margin-right: 7px;
 }
 
 nav#sitenav ul li#general {
@@ -133,7 +151,7 @@ nav#sitenav ul li#viewcart div#whitetriangle {
 	border-top: 25px solid transparent;
 	border-bottom: 25px solid transparent;
 	border-left: 25px solid white;
-	margin-right: 15px;
+	margin-right: 25px;
 }
 
 nav#sitenav ul li#viewcart div.menu {
@@ -147,17 +165,67 @@ nav#sitenav ul li#viewcart div.menu {
 
 /* main */
 div#main {
+	height: 300px;
 }
 
 /* footer */
 div#footer {
-	height: 200px;
+	height: 290px;
 	background-color: #FBEDD6;
 	
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	bottom: 40px;
+	top: 588px; /* header - 288px body - 500px */
+}
+
+div#footer_container {
+	margin: auto;
+	width: 940px;
+	height: 100%;
+}
+
+div#footer_container div {
+	margin-right: 20px;
+	font-size: 13px;
+}
+
+div#footer_container div li.first {
+	margin-top: 17px;
+}
+
+div#footer_container div p.title {
+	font-family: Atype1, sans-serif;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 16px 0px 14px 0px;
+}
+
+div#news {
+}
+
+div#news p.desc {
+	font-size: 12px;
+	color: #000000;
+	line-height: 20px;
+}
+
+div#news li {
+	margin-top: 10px;
+}
+
+div#connect {
+	width: 240px;
+}
+
+div#menu {
+}
+
+div#guide {
+}
+
+div#menu li, div#guide li {
+	margin-top: 9px;
 }
 
 div#copyright {
@@ -172,5 +240,5 @@ div#copyright {
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	bottom: 0px;
+	top: 878px; /* header - 288px body - 500px footer - 290px */
 }
