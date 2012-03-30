@@ -1,2 +1,29 @@
-<div id="fb-root"></div>
-<div class="fb-login-button">Connect</div>
+<div id="title" class="grid_12 alpha omega">
+  <p class="title">create new account</p>
+</div>
+<div class="beigeline grid_12 alpha omega"></div>
+<div id="signupfacebook" class="grid_6 alpha">
+  <p class="top">Sign up via your facebook account!</p>
+  <p>&nbsp;</p>
+  <p>Friday Laundry will not interfere with your Facebook wall or draw personal details from your Facebook account for any purpose. You can choose to keep your identity private on Friday laundry.</p>
+  <p class="bottom">&nbsp;</p>
+  <div id="fb-root"></div>
+  <div class="fb-login-button">Connect</div>
+</div>
+<div id="login" class="grid_4 omega">
+  <p class="title">or log in</p>
+  <%= form_tag("/login", :method => "post") do %>
+    <p>Username:</p>
+    <%= text_field_tag(:email) %><br />
+    <p>Password:</p>
+    <%= text_field_tag(:password) %><br />
+    <%= submit_tag("Log In") %>
+  <% end %>
+</div>
+<div id="signupemail" class="grid_6 alpha">
+  <p>Sign up with my email address.</p>
+  <%= form_tag("/create", :method => "post") do %>
+    <%= text_field_tag(:email) %>
+    <%= submit_tag("I'm In!") %>
+  <% end %>
+</div>

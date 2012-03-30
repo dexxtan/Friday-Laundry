@@ -2,6 +2,56 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* classes */
+p.title {
+    font-family: Atype1, sans-serif;
+    color: #03B9B9;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
 /* home styles */
 
 /* signup styles */
+p {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+p.top {
+    margin-top: -5px;
+}
+
+p.bottom {
+    margin-bottom: 5px;
+}
+
+div#title {
+    margin-bottom: 21px;
+}
+
+div.grid_6, div.grid_4 {
+    margin-top: 20px;
+}
+
+div#signupfacebook {
+}
+
+div#login {
+    float: right;
+    width: 260px;
+    padding: 15px 20px 20px 20px;
+    background-color: #FBEDD6;
+}
+
+div#login p.title {
+    margin-bottom: 12px;
+}
+
+div#login * {
+    margin-bottom: 4px;
+}
+
+div#signupemail p {
+    margin-bottom: 12px;
+}
