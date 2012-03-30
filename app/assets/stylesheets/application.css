@@ -12,6 +12,7 @@
  *= require_tree .
  *= require 960
 */
+
 /* spreadsheet wide settings */
 * {
 	margin: 0px;
@@ -244,3 +245,4 @@ div#guide {
 div#menu li, div#guide li {
 	margin-top: 9px;
 }
+/* end of footer */
