@@ -165,7 +165,7 @@ nav#sitenav ul li#viewcart div.menu {
 
 /* main */
 div#main {
-	height: 300px;
+	min-height: 300px;
 }
 
 /* footer */
@@ -176,7 +176,24 @@ div#footer {
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	top: 588px; /* header - 288px body - 500px */
+	/*top: 588px; /* header - 288px body - 500px */
+	bottom: auto;
+}
+
+div#footer div#copyright {
+	height: 40px;
+	background-color: #02BCBC;
+	
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 40px;
+	
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	/*top: 878px; /* header - 288px body - 500px footer - 290px */
+	bottom: -40px;
 }
 
 div#footer_container {
@@ -226,19 +243,4 @@ div#guide {
 
 div#menu li, div#guide li {
 	margin-top: 9px;
-}
-
-div#copyright {
-	height: 40px;
-	background-color: #02BCBC;
-	
-	text-align: center;
-	color: #FFFFFF;
-	font-size: 12px;
-	line-height: 40px;
-	
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 878px; /* header - 288px body - 500px footer - 290px */
 }
