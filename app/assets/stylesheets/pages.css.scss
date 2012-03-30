@@ -30,7 +30,7 @@ div#title {
     margin-bottom: 21px;
 }
 
-div.grid_6, div.grid_4 {
+div#signupfacebook, div#signupemail, div#login {
     margin-top: 20px;
 }
 
@@ -50,6 +50,10 @@ div#login p.title {
 
 div#login * {
     margin-bottom: 4px;
+}
+
+div#signupemail {
+    margin-bottom: 40px;
 }
 
 div#signupemail p {
