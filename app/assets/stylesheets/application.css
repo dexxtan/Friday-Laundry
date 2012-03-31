@@ -19,6 +19,10 @@
     padding: 0px;
 }
 
+html {
+	overflow-y: scroll; /* forces permanent scrollbar */
+}
+
 html, body {
     font-family: Arial;
 }
