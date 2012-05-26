@@ -179,6 +179,32 @@ div#main {
     min-height: 300px;
 }
 
+/* forms */
+input[type=text] {
+    border: 1px solid #4A4A4A;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 1px 1px 1px #D9D9D9;
+    -moz-box-shadow: inset 0px 1px 1px 1px #D9D9D9;
+    box-shadow: inset 0px 1px 1px 1px #D9D9D9;
+    height: 27px;
+}
+
+input[type=submit] {
+    border: 1px solid #4A4A4A;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #aeaeae;
+    -moz-box-shadow: inset 0px 1px 0px 0px #aeaeae;
+    box-shadow: inset 0px 1px 0px 0px #aeaeae;
+    background: -webkit-linear-gradient(top, #7d7d7d 0%,#111010 75%);
+    background: linear-gradient(top, #7d7d7d 0%,#111010 100%);
+    color: #FFFFFF;
+    height: 29px;
+}
+
 /* footer */
 div#footer {
     height: 290px;

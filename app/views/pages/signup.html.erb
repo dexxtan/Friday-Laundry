@@ -23,7 +23,11 @@
 <div id="signupemail" class="grid_6 alpha">
   <p>Sign up with my email address.</p>
   <%= form_tag("/create", :method => "post") do %>
-    <%= text_field_tag(:email) %>
-    <%= submit_tag("I'm In!") %>
+  <table>
+    <tr>
+      <td><%= text_field_tag(:email) %></td>
+      <td><%= submit_tag("I'm In!") %></td>
+    </tr>
+  </table>
   <% end %>
 </div>

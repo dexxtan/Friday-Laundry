@@ -40,12 +40,22 @@ div#signupfacebook {
 div#login {
     float: right;
     width: 260px;
-    padding: 15px 20px 20px 20px;
+    padding: 15px 20px 11px 20px;
     background-color: #FBEDD6;
 }
 
 div#login p.title {
     margin-bottom: 12px;
+}
+
+div#login input[type=text] {
+    width: 100%;
+    background: linear-gradient(top, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+}
+
+div#login input[type=submit] {
+    margin-top: 13px;
+    width: 100px;
 }
 
 div#login * {
@@ -58,4 +68,13 @@ div#signupemail {
 
 div#signupemail p {
     margin-bottom: 12px;
+}
+
+div#signupemail input[type=text] {
+    width: 206px;
+    margin-right: 16px;
+}
+
+div#signupemail input[type=submit] {
+    width: 100px;
 }
