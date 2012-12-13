@@ -54,7 +54,7 @@ a img {
 }
 
 /* colours */
-.green {
+.green, a.green {
     color: #03BABA;
 }
 

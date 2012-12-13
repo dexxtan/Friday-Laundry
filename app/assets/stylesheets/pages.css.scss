@@ -5,7 +5,6 @@
 /* classes */
 p.title {
     font-family: Atype1, sans-serif;
-    color: #03B9B9;
     font-size: 20px;
     margin-bottom: 0px;
 }
@@ -60,6 +59,14 @@ div#login input[type=submit] {
 
 div#login * {
     margin-bottom: 4px;
+}
+
+div#login p#password {
+    float: left;
+}
+
+div#login p#forgotpassword {
+    float: right;
 }
 
 div#signupemail {
