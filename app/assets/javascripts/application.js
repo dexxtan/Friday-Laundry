@@ -30,7 +30,11 @@ window.fbAsyncInit = function() {
             // connected
             FB.api('/me', function(response) {
                 console.log('Welcome back, ' + response.name + '.');
-                console.log('Verified: ' + response.verified + '.');
+                console.log('Logging you out... ');
+            });
+            
+            FB.logout(function (response) {
+                console.log('Logged Out: ' + response.authResponse);
             });
         } else if (response.status === 'not_authorized') {
           // not_authorized
@@ -55,16 +59,23 @@ function login() {
     FB.login(function(response) {
         if (response.authResponse) {
             // connected
-            testAPI();
+            retrieveInformation();
         } else {
             // cancelled
         }
     });
 }
 
-function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
+function retrieveInformation() {
+    console.log('Welcome! Fetching your information.... ');
     FB.api('/me', function(response) {
         console.log('Good to see you, ' + response.name + '.');
+        $.ajax({
+            type: "POST",
+            url: "/user/fbcreate",
+            data: { name: response.name }
+        }).done(function( msg ) {
+            alert( "Data Saved with ID: " + msg.id );
+        });
     });
 }

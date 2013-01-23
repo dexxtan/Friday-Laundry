@@ -6,4 +6,12 @@ class UserController < ApplicationController
     
     redirect_to "/signup"
   end
+  
+  def fbcreate
+    @user = User.new
+    @user.name = params[:name]
+    @user.save
+    
+    render :json => @user
+  end
 end
