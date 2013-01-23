@@ -31,11 +31,12 @@ window.fbAsyncInit = function() {
             FB.api('/me', function(response) {
                 console.log('Welcome back, ' + response.name + '.');
                 console.log('Logging you out... ');
+                
+                FB.logout(function (response) {
+                    console.log('Logged Out: ' + response.authResponse == true);
+                });
             });
             
-            FB.logout(function (response) {
-                console.log('Logged Out: ' + response.authResponse);
-            });
         } else if (response.status === 'not_authorized') {
           // not_authorized
           login();
@@ -75,7 +76,7 @@ function retrieveInformation() {
             url: "/user/fbcreate",
             data: { name: response.name }
         }).done(function( msg ) {
-            alert( "Data Saved with ID: " + msg.id );
+            console.log( "User created with ID: " + msg.id );
         });
     });
 }
