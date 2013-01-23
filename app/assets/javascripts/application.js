@@ -27,8 +27,11 @@ window.fbAsyncInit = function() {
   
     FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
-          // connected
-          console.log('Welcome Back, ' + response.name + '.');
+            // connected
+            FB.api('/me', function(response) {
+                console.log('Welcome back, ' + response.name + '.');
+                console.log('Verified: ' + response.verified + '.');
+            });
         } else if (response.status === 'not_authorized') {
           // not_authorized
           login();
