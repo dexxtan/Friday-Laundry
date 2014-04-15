@@ -1,7 +1,7 @@
 Friday::Application.routes.draw do
-  match '/signup',	:to => 'pages#signup'
-  match '/user/create',  :to => 'user#create'
-  match '/user/fbcreate', :to => 'user#fbcreate'
+  get '/signup',	:to => 'pages#signup'
+  get '/user/create',  :to => 'user#create'
+  get '/user/fbcreate', :to => 'user#fbcreate'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

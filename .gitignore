@@ -32,3 +32,4 @@ doc/
 .DS_Store
 *.db
 nbproject/
+.idea/
