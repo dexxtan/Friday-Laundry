@@ -35,12 +35,12 @@ ul {
 /* fonts */
 @font-face {
     font-family: 'Cafeta';
-    src: url('CAFETA__.TTF');
+    src: url('/assets/CAFETA__.TTF');
 }
 
 @font-face {
     font-family: 'Atype1';
-    src: url('Atype_1_Normal.ttf');
+    src: url('/assets/Atype_1_Normal.ttf');
 }
 
 /* links */
